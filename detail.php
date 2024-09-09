@@ -26,13 +26,19 @@ if(isset($_GET['product_id'])){
 </head>
 <body>
 <div class="container">
-    <h1><?php echo $product['des']; ?></h1>
+    <h1><?php echo $product['name']; ?></h1>
 
-    <a href="detail.php?lang=en" class="btn btn-primary">EN</a>
-    <a href="detail.php?lang=fa" class="btn btn-primary">FA</a>
 
     <div class="row">
-
+        <div class="col-3">
+            <div class="card">
+                <img src="<?php echo $product['images']; ?>" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo $product['price']; ?></h5>
+                    <p class="card-text"><?php echo $product['des']; ?></p>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>
