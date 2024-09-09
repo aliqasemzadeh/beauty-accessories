@@ -41,6 +41,23 @@ if(isset($_GET['product_id'])){
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-4">
+            <form class="mt-5" action="final.php" method="post">
+                <input type="hidden" name="product_id" value="<?php echo $product_id; ?>">
+                <div class="mb-2">
+                    <label id="postcode"><?php echo $lang[$langCode]['postCode']; ?></label>
+                    <input type="text" class="form-control" name="postCode" id="postcode">
+                </div>
+                <div class="mb-2">
+                    <label id="name"><?php echo $lang[$langCode]['name']; ?></label>
+                    <input type="text" class="form-control" name="name" id="name">
+                </div>
+                <input type="submit" name="submit" class="btn btn-secondary">
+            </form>
+        </div>
+    </div>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

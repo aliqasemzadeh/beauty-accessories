@@ -17,6 +17,7 @@ if(isset($_GET["lang"])){
 <body>
 <div class="container">
     <h1><?php echo $lang[$langCode]['description']; ?></h1>
+    <h1><?php echo el('description'); ?></h1>
 
     <a href="index.php?lang=en" class="btn btn-primary">EN</a>
     <a href="index.php?lang=fa" class="btn btn-primary">FA</a>

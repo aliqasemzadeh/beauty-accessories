@@ -5,6 +5,8 @@ $lang['fa']['title'] = "لوازم آرایشی عسل";
 $lang['fa']['description'] = "خرید با بهترین قیمت";
 $lang['fa']['dir'] = "rtl";
 $lang['fa']['detail'] = "توضیحات بیشتر";
+$lang['fa']['postCode'] = "کد پستی";
+$lang['fa']['name'] = "نام";
 
 $lang['fa']['products'][0]['name'] = "آب رسان";
 $lang['fa']['products'][0]['price'] = 1800;
@@ -36,6 +38,8 @@ $lang['en']['title'] = "Beauty Accessories Asal";
 $lang['en']['description'] = "Best price for products";
 $lang['en']['dir'] = "ltr";
 $lang['en']['detail'] = "Read more";
+$lang['en']['postCode'] = "Zipcode";
+$lang['en']['name'] = "Name";
 
 $lang['en']['products'][0]['name'] = "Ab resan";
 $lang['en']['products'][0]['price'] = 1800;
@@ -61,3 +65,9 @@ $lang['en']['products'][4]['name'] = "Rimel";
 $lang['en']['products'][4]['price'] = 200;
 $lang['en']['products'][4]['images'] = 'images/5.jpg';
 $lang['en']['products'][4]['des'] = 'English English English ';
+
+function el($key, $code = 'en')
+{
+    global $lang;
+    echo $lang[$code][$key];
+}
